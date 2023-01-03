@@ -1,0 +1,9 @@
+*{
+    box-sizing: border-box;
+}
+body {
+    padding: 40px;
+  }
+a {
+    color: #f3a426;
+  }

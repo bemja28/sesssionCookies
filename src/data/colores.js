@@ -1,0 +1,1 @@
+module.exports = [ "Rojo", "Azul", "Amarillo", "Verde"]

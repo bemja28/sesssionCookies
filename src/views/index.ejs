@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<%- include('./partials/head', {title:"Session y Cookies"}) %>
+
+
+<%- include('./partials/colores') %> 
+
+    <header class="index_header">
+      <h1> TP Session y Cookies</h1>
+    </header>
+    <main class="index_main">
+      <section class="index_section">
+        <h1>Informacion</h1>
+
+        <form action="/validacion" method="POST">
+
+          <div class="form_cont">
+            <label for="name">Ingrese su nombre</label>
+            <input class="form_input" type="text" name="name" value="<%= locals.old && old.name ? old.name : null %>">
+            <small class="alert"><%= locals.errors && errors.name ? errors.name.msg : null %></small>
+          </div>
+          <div class="form_cont">
+            <label for="email">Ingrese su email</label>
+            <input class="form_input" type="email" name="email" value="<%= locals.old && old.email ? old.email : null %>">
+            <small class="alert"><%= locals.errors && errors.email ? errors.email.msg : null %></small>
+          </div>
+           <div class="form_cont">
+            <select name="color">
+              <option value="" hidden selected >Seleccione un color ...</option>
+              <% colores.forEach(color => { %>
+                 <option value = "<%= color %>"><%= color %></option> 
+              <% }) %>
+            </select>
+            <input type="checkbox" name="save"> 
+            <label for="">Guardar Color</label>
+          </div>
+
+          <div class="button_cont">
+            <a class="Boton" href="/destroy" type="reset">Olvidar Color</a>
+            <button class="Boton" type="submit">Ingresar</button>
+          </div>
+        </form>
+
+      </section>
+    </main>
+
+  </body>
+</html>

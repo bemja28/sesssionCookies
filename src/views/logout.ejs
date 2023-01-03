@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<%- include('./partials/head', {title:"Mensaje"}) %>
+
+
+<%- include('./partials/colores') %> 
+
+    <header class="index_header">
+      <h1>Session & Cookies</h1>
+    </header>
+    <main class="index_main">
+      <section class="index_section">
+        <h1 class="">Agradecimiento</h1>
+        <p class="mensaje">
+          <%= locals.login.name %> Gracias por visitarnos! 
+        </p>
+        <div class="button_cont">
+          <a class="Boton" href="/">Salir</a>
+        </div>
+      </section>
+    </main>
+
+  </body>
+</html>
