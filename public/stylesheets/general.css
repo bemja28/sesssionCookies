@@ -2,8 +2,13 @@
     box-sizing: border-box;
 }
 body {
-    padding: 40px;
+    padding: 50px;
+    font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
   }
 a {
-    color: #f3a426;
+    color: #00B7FF;
+  }
+:root {
+    --color01 : green ;
+    --color02 : blue;
   }

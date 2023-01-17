@@ -1,4 +1,4 @@
-const colors = require ('../data/colores');
+const colors = require ('../data/colores')
 
 module.exports = {
 

@@ -1,44 +1,40 @@
-<!DOCTYPE html>
-<html>
+<%- include('./partials/head', {title:"Session & Cookies"}) %>
 
-<%- include('./partials/head', {title:"Session y Cookies"}) %>
-
-
-<%- include('./partials/colores') %> 
+  <%- include('./partials/colores') %> 
 
     <header class="index_header">
-      <h1> TP Session y Cookies</h1>
+      <h1>TP Session & Cookies</h1>
     </header>
     <main class="index_main">
       <section class="index_section">
-        <h1>Informacion</h1>
+        <h1>Información</h1>
 
         <form action="/validacion" method="POST">
 
-          <div class="form_cont">
-            <label for="name">Ingrese su nombre</label>
-            <input class="form_input" type="text" name="name" value="<%= locals.old && old.name ? old.name : null %>">
-            <small class="alert"><%= locals.errors && errors.name ? errors.name.msg : null %></small>
+          <div class="div__form">
+            <label for="name">Nombre</label>
+            <input class="div__form__input" type="text" id="name" name="name" value="<%= locals.old && old.name ? old.name : null %>">
+            <small class="div__form__small"><%= locals.errors && errors.name ? errors.name.msg : null %></small>
           </div>
-          <div class="form_cont">
-            <label for="email">Ingrese su email</label>
-            <input class="form_input" type="email" name="email" value="<%= locals.old && old.email ? old.email : null %>">
-            <small class="alert"><%= locals.errors && errors.email ? errors.email.msg : null %></small>
+          <div class="div__form">
+            <label for="email">Email</label>
+            <input class="div__form__input" type="email" id="email" name="email" value="<%= locals.old && old.email ? old.email : null %>">
+            <small class="div__form__small"><%= locals.errors && errors.email ? errors.email.msg : null %></small>
           </div>
-           <div class="form_cont">
-            <select name="color">
+           <div class="div__form">
+            <select name="colores" id="colores" >
               <option value="" hidden selected >Seleccione un color ...</option>
-              <% colores.forEach(color => { %>
+              <% colors.forEach(color => { %>
                  <option value = "<%= color %>"><%= color %></option> 
               <% }) %>
             </select>
-            <input type="checkbox" name="save"> 
+            <input type="checkbox" name="saveColor"> 
             <label for="">Guardar Color</label>
           </div>
 
           <div class="button_cont">
-            <a class="Boton" href="/destroy" type="reset">Olvidar Color</a>
-            <button class="Boton" type="submit">Ingresar</button>
+            <a class="div__button" href="/destroy" type="reset">Olvidar Color</a>
+            <button class="div__button" type="submit">Entrar</button>
           </div>
         </form>
 

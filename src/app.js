@@ -7,7 +7,7 @@ var logger = require('morgan');
 const session = require ('express-session')
 
 const cookieCheck = require ('./middlewares/cookieCheck')
-const localCheck = require ('./middlewares/localCheck')
+const localUserCheck = require ('./middlewares/localUserCheck')
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
@@ -25,13 +25,13 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, '../public')));
 
 app.use(session({
-  secret :'es Secreto',
+  secret :'lo secreto',
   resave: false,
   saveUninitialized: true
 }));
 
 app.use(cookieCheck);
-app.use(localCheck);
+app.use(localUserCheck);
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);

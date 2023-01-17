@@ -1,113 +1,23 @@
 [
    {
       "id": 1,
-      "nombre": "Santi",
-      "email": "santi@hotmail.com",
-      "edad": "21",
-      "colores": ""
-   },
-   {
-      "id": 2,
-      "name": "Santiago",
-      "email": "garrasamigas@gmail.com",
-      "edad": "21",
-      "colores": "Rojo",
+      "name": "mariano",
+      "email": "bemja@gmail.com",
+      "colores": "Azul",
       "saveColor": "on"
    },
    {
-      "id": 3,
-      "name": "GarrasAmigas",
-      "email": "garras@gmail.com",
-      "edad": "21",
+      "id": 2,
+      "name": "benjamin",
+      "email": "bemjamin@gmail.com",
       "colores": "Verde",
       "saveColor": "on"
    },
    {
-      "id": 4,
-      "name": "mariano",
-      "email": "bemja28@gmail.com",
-      "edad": "31",
+      "id": 3,
+      "name": "rene",
+      "email": "rene@gmail.com",
       "colores": "Amarillo",
       "saveColor": "on"
-   },
-   {
-      "id": 5,
-      "name": "bbbbbb",
-      "email": "bemja@gmail.com",
-      "edad": "18",
-      "colores": "Azul"
-   },
-   {
-      "id": 6,
-      "name": "mariano",
-      "email": "mariano@gmail.com",
-      "colores": "Amarillo"
-   },
-   {
-      "id": 7,
-      "name": "mariano",
-      "email": "mariano12@gmail.com",
-      "colores": ""
-   },
-   {
-      "id": 8,
-      "name": "benjamin",
-      "email": "bemja23@gmail.com",
-      "colores": "Amarillo"
-   },
-   {
-      "id": 9,
-      "name": "benjamin",
-      "email": "bemja2811@gmail.com",
-      "colores": "Amarillo"
-   },
-   {
-      "id": 10,
-      "name": "dfgdfgdfg",
-      "email": "bemja2ff3@gmail.com",
-      "color": "Rojo",
-      "save": "on"
-   },
-   {
-      "id": 11,
-      "name": "dfgdfgdfg",
-      "email": "bemja2ddff3@gmail.com",
-      "color": ""
-   },
-   {
-      "id": 12,
-      "name": "dfgdfgdfg",
-      "email": "bemja281111@gmail.com",
-      "color": "Azul"
-   },
-   {
-      "id": 13,
-      "name": "xxxxx",
-      "email": "mariano122@gmail.com",
-      "color": "Amarillo"
-   },
-   {
-      "id": 14,
-      "name": "vvvv",
-      "email": "bemja24@gmail.com",
-      "color": "Rojo"
-   },
-   {
-      "id": 15,
-      "name": "mariano",
-      "email": "mariano13@gmail.com",
-      "color": "Rojo"
-   },
-   {
-      "id": 16,
-      "name": "vvvv",
-      "email": "bemja2ffeee3@gmail.com",
-      "color": "Azul"
-   },
-   {
-      "id": 17,
-      "name": "btrtr",
-      "email": "bemja23444@gmail.com",
-      "color": "Verde"
    }
 ]

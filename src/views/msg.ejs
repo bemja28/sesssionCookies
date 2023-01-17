@@ -1,27 +1,25 @@
-<!DOCTYPE html>
-<html>
 <%- include('./partials/head', {title:"Mensaje"}) %>
 
 
 <%- include('./partials/colores') %> 
 
     <header class="index_header">
-      <h1>TP Session y Cookies</h1>
+      <h1>Session & Cookies</h1>
     </header>
     <main class="index_main">
       <section class="index_section">
         <h1 class="" >Mensaje</h1>
         <p class="mensaje">
-          Hola <%= locals.login.name%>, <% if (locals.login.color=="") { %>
+          Hola <%= locals.login.name%>, <% if (locals.login.colores=="") { %>
              no elegiste color,
           <% }else{ %>
-            elegiste el color <%= locals.login.color%>
+            elegiste el color <%= locals.login.colores %>,
           <% } %>
                     
-          y tu email es <%= locals.login.email %> 
+         y tu email es <%= locals.login.email %> 
         </p>
         <div class="button_cont">
-          <a class="Boton" href="/users/logout">Continuar</a>
+          <a class="div__button" href="/users/logout">Continuar</a>
         </div>
       </section>
     </main>
